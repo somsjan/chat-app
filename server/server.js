@@ -1,4 +1,5 @@
 const express = require('express');
+const socket.io = require('socket.io');
 const path = require('path');
 
 const publicPath = path.join(__dirname , '/../public');

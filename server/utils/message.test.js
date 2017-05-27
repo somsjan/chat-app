@@ -19,10 +19,12 @@ describe('generateLocationMessage', () => {
         var from = 'Jezus';
         var latitude = 1;
         var longitude = 2;
+        var url = 'https://www.google.nl/maps?q=1,2';
+        
         var message = generateLocationMessage(from, latitude, longitude);
 
         expect(message.createdAt).toBeA('number');
         expect(message.from).toBe(from);
-        expect(message.url).toBe('https://www.google.nl/maps?q=1,2');
+        expect(message.url).toBe(url);
     });
 });
